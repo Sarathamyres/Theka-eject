@@ -1,0 +1,147 @@
+header .logo-gray {
+  display: none;
+}
+header .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 41px;
+  max-width: 950px;
+  margin: 0 auto;
+}
+header .navbar-list {
+  display: flex;
+  gap: 50px;
+  font-size: 4rem;
+  font-weight: 700;
+  letter-spacing: -0.64px;
+  color: var(--color-grey);
+}
+footer {
+  background-color: var(--color-pink);
+  color: var(--color-white);
+  font-family: "Inter", sans-serif;
+  padding-top: 20px;
+}
+footer .container,
+footer nav,
+footer ul li a {
+  display: flex;
+}
+footer .logo {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 400px;
+  position: relative;
+  padding-bottom: 15px;
+}
+footer .logo small {
+  font-size: 1.2rem;
+  position: absolute;
+  bottom: 0;
+  left: 95px;
+}
+footer .container {
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 41px;
+  margin: 0 auto;
+  max-width: 1200px;
+}
+footer nav {
+  width: 60%;
+  justify-content: space-between;
+}
+footer .nav-box {
+  padding: 10px;
+}
+footer h3 {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+footer ul li {
+  line-height: 35px;
+}
+footer ul li a:hover {
+  text-decoration: underline;
+}
+footer ul li a p {
+  font-size: 1.8rem;
+  font-style: normal;
+  font-weight: 500;
+}
+footer ul li a {
+  align-items: center;
+}
+footer ul li a img {
+  width: 24px;
+  height: 24px;
+  aspect-ratio: 1/1;
+  margin-right: 2px;
+}
+footer .baseboard {
+  padding: 20px 0;
+  font-size: 2rem;
+  text-align: center;
+  margin: 0 auto;
+}
+@media (max-width: 1127px) {
+  footer h3 {
+    font-size: 2rem;
+  }
+  footer ul li a p {
+    font-size: 1.5rem;
+  }
+}
+@media (max-width: 1091px) {
+  footer .container {
+    flex-direction: column;
+  }
+  footer .logo {
+    padding: 20px;
+  }
+  footer nav {
+    padding: 20px;
+    width: 100%;
+  }
+}
+@media (max-width: 766px) {
+  header .navbar-list {
+    font-size: 3.5rem;
+    gap: 30px;
+  }
+  header .container img {
+    width: 50px;
+  }
+  header .container img:last-child {
+    width: 30px;
+  }
+  footer h3 {
+    font-size: 1.8rem;
+  }
+  footer ul li a p {
+    font-size: 1.2rem;
+  }
+}
+@media (min-width: 501px) and (max-width: 586px) {
+  header .navbar-list {
+    font-size: 3.2rem;
+    gap: 20px;
+  }
+  footer .nav-box:last-child p {
+    display: none;
+  }
+}
+@media (max-width: 500px) {
+  header .navbar-menu,
+  header .icon-user-menu {
+    display: none;
+  }
+  footer nav {
+    flex-direction: column;
+    align-items: center;
+  }
+}

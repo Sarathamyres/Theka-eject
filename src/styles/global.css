@@ -3,13 +3,18 @@
   padding: 0;
   box-sizing: border-box;
   text-decoration: none;
+  list-style: none;
   font-size: 62.5%;
-  font-family: "DM Sans";
 }
 a {
   color: inherit;
 }
+main {
+  font-family: "DM Sans";
+}
 :root {
   --color-orange: #f78520;
   --color-white: #fff;
+  --color-grey: #5a5a5a;
+  --color-pink: #81013a;
 }
