@@ -1,0 +1,15 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-size: 62.5%;
+  font-family: "DM Sans";
+}
+a {
+  color: inherit;
+}
+:root {
+  --color-orange: #f78520;
+  --color-white: #fff;
+}
