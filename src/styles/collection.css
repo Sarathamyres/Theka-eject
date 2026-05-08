@@ -3,22 +3,6 @@ main {
   padding: 20px 41px;
   margin: 0 auto;
 }
-.titles {
-  width: 50%;
-}
-.titles h1 {
-  font-size: 10.3rem;
-  font-weight: 700;
-  color: var(--color-pink);
-}
-.title-news-week h2 {
-  font-size: 4rem;
-  opacity: 0.7;
-}
-.title-news-week p {
-  font-size: 1.8rem;
-  opacity: 0.7;
-}
 .filter {
   margin: 100px 0;
 }
@@ -34,7 +18,22 @@ main {
   border: 1px solid var(--color-pink);
   border-radius: 30px;
 }
+.filter input {
+  margin-left: 10px;
+  padding: 10px;
+  width: 500px;
+  font-size: 1.8rem;
+  border: none;
+}  font-size: 1.8rem;
+
+.filter input::placeholder {
+  font-size: 1.8rem;
+}
 .filter .category {
+  display: flex;
+  gap: 20px;
+}
+.filter selectz {
   display: flex;
   gap: 20px;
 }
@@ -116,16 +115,10 @@ main {
   .collection-books .collection-books_list {
     grid-template-columns: repeat(3, 1fr);
   }
-  .titles h1 {
-    font-size: 8rem;
-  }
 }
-@media (max-width: 831px) {
+@media (max-width: 880px) {
   .collection-books .collection-books_list {
     grid-template-columns: repeat(2, 1fr);
-  }
-  .titles {
-    width: 100%;
   }
 }
 @media (max-width: 631px) {
