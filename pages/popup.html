@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="estilo.css">
+  <link rel="stylesheet" href="/src/styles/global.css">
+  <title>Document</title>
+</head>
+
+<body>
+  <div class="popup-form">
+    <h2>Adicionar material ao catálogo</h2>
+    <div class="container-form">
+      <form action=" " method="POST">
+        <div class="box-image-book">
+          <img src="/src/images/books/CAPA LIVRO (10).png" alt="" class="image-book">
+        </div>
+        <div class="subcontainer-form">
+          <div class="column column-one">
+            <div class="box-input">
+              <label>Título do material:</label>
+              <input type="text" id="tittle" name="tittle" required placeholder="Inserir título do material">
+            </div>
+            <div class="box-support">
+              <div>
+                <label>N. de páginas</label>
+                <input type="number" id="number-pages" name="number-pages" required placeholder="ooo">
+              </div>
+
+              <div>
+                <label>ISBM </label>
+                <input type="number" id="isbm" name="isbm" required placeholder="ooo">
+              </div>
+            </div>
+
+          </div>
+          <div class="column column-two">
+            <div class="box-input">
+              <label>Autor:</label>
+              <input type="name" id="author" name="author" required placeholder="ex: Machado de Assis">
+            </div>
+            <div class="box-support">
+
+              <div>
+                <label>Autor:</label>
+                <input type="number" id="date-published" name="date-published" required placeholder="oooo">
+              </div>
+
+              <div>
+                <label>Editora:</label>
+                <input type="number" id="date-published" name="date-published" required placeholder="oooo">
+              </div>
+            </div>
+          </div>
+          <div class="column column-three">
+            <div>
+              <label for="">Resumo do material:</label>
+              <input class="input-text" type="text" placeholder="Inserir um breve resumo do material.">
+            </div>
+          </div>
+          <div class="buttons-submit" id="box-two-buttons">
+            <div>
+              <button id="cancel">Cancelar</button>
+              <button id="save">Salvar</button>
+            </div>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <div class="popup-form">
+    <h2>Editar material</h2>
+    <div class="container-form">
+      <form action=" " method="POST">
+        <div class="box-image-book">
+          <img src="/src/images/books/CAPA LIVRO (10).png" alt="" class="image-book">
+        </div>
+        <div class="subcontainer-form">
+          <div class="column column-one">
+            <div class="box-input">
+              <label>Título do material:</label>
+              <input type="text" id="tittle" name="tittle" required placeholder="Inserir título do material">
+            </div>
+            <div class="box-support">
+              <div>
+                <label>N. de páginas</label>
+                <input type="number" id="number-pages" name="number-pages" required placeholder="ooo">
+              </div>
+
+              <div>
+                <label>ISBM </label>
+                <input type="number" id="isbm" name="isbm" required placeholder="ooo">
+              </div>
+            </div>
+
+          </div>
+          <div class="column column-two">
+            <div class="box-input">
+              <label>Autor:</label>
+              <input type="name" id="author" name="author" required placeholder="ex: Machado de Assis">
+            </div>
+            <div class="box-support">
+
+              <div>
+                <label>Autor:</label>
+                <input type="number" id="date-published" name="date-published" required placeholder="oooo">
+              </div>
+
+              <div>
+                <label>Editora:</label>
+                <input type="number" id="date-published" name="date-published" required placeholder="oooo">
+              </div>
+            </div>
+          </div>
+          <div class="column column-three">
+            <div>
+              <label for="">Resumo do material:</label>
+              <input class="input-text" type="text" placeholder="Inserir um breve resumo do material.">
+            </div>
+          </div>
+          <div class="buttons-submit" id="box-three-buttons">
+            <button id="delete">Deletar</button>
+
+            <div>
+              <button id="cancel">Cancelar</button>
+              <button id="save">Salvar</button>
+            </div>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+
+</body>
+
+</html>

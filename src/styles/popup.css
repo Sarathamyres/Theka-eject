@@ -1,0 +1,139 @@
+.popup-form {
+  margin: 40px;
+  display: flex;
+  flex-direction: column;
+}
+form {
+  display: flex;
+  gap: 20px;
+}
+.box-image-book{
+  display: flex;
+  align-items: start;
+  justify-content: center;
+}
+.column {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  justify-content: space-between;
+  gap: 20px;
+}
+.box-support {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+.container-form {
+  width: fit-content;
+  margin: 20px 0;
+}
+.subcontainer-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.popup-form h2 {
+  margin: 20px 0;
+  font-size: 4rem;
+  color: var(--color-pink);
+}
+form .subcontainer-form .column div{
+  padding: 5px;
+}
+form .subcontainer-form label {
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin: 5px;
+  color: var(--color-pink);
+  display: flex;
+}
+form .subcontainer-form input {
+  padding: 15px;
+  border-radius: 20px;
+  border: 2px solid var(--color-pink);
+}
+.box-support div {
+  max-width: 150px;
+}
+.box-support div input {
+  width: 100%;
+}
+form .subcontainer-form input::placeholder {
+  font-size: 1.2rem;
+}
+form .subcontainer-form .box-input {
+  width: 421px;
+}
+form .subcontainer-form .box-input #author,
+form .subcontainer-form .box-input #tittle {
+  width: 100%;
+}
+form .subcontainer-form .column-three {
+  display: block;
+}
+form .subcontainer-form .column-three input {
+  min-width: 100%;
+  height: 100px;
+}
+.container-form .buttons-submit {
+  display: flex;
+  padding: 20px;
+}
+#box-two-buttons {
+  justify-content: end;
+}
+#box-three-buttons {
+  justify-content: space-between;
+}
+.container-form .buttons-submit button {
+  padding: 10px 20px;
+  font-size: 1.8rem;
+  border-radius: 20px;
+  border: 2px solid var(--color-pink);
+}
+.container-form .buttons-submit #cancel {
+  color: var(--color-pink);
+  margin-right: 10px;
+}
+.container-form .buttons-submit #cancel:hover {
+  background-color: var(--color-pink);
+  color: var(--color-white);
+}
+.container-form .buttons-submit #save,
+#delete {
+  background-color: var(--color-pink);
+  color: var(--color-white);
+}
+.container-form .buttons-submit #save:hover,
+.container-form .buttons-submit #delete:hover {
+  background-color: transparent;
+  color: var(--color-pink);
+}
+
+@media (min-width: 801px) and (max-width: 1040px) {
+  form {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  .subcontainer-form {
+    width: 800px;
+  }
+}
+@media (max-width: 800px) {
+  form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .box-support {
+    display: flex;
+    justify-content: space-between;
+  }
+  .column {
+    display: block;
+  }
+}
