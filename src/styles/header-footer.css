@@ -1,21 +1,27 @@
 header .logo-gray {
   display: none;
 }
-header .container {
+header .container-global {
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 10px 41px;
-  max-width: 950px;
+  max-width: 1200px;
   margin: 0 auto;
+}
+header .navbar-menu {
+  width: 50%;
 }
 header .navbar-list {
   display: flex;
-  gap: 50px;
+  justify-content: space-around;
   font-size: 4rem;
   font-weight: 700;
   letter-spacing: -0.64px;
   color: var(--color-grey);
+}
+header .navbar-list li {
+  cursor: pointer;
 }
 footer {
   background-color: var(--color-pink);
@@ -23,7 +29,7 @@ footer {
   font-family: "Inter", sans-serif;
   padding-top: 20px;
 }
-footer .container,
+footer .container-global,
 footer nav,
 footer ul li a {
   display: flex;
@@ -33,17 +39,17 @@ footer .logo {
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  width: 400px;
   position: relative;
   padding-bottom: 15px;
+  object-fit: contain;
 }
 footer .logo small {
   font-size: 1.2rem;
   position: absolute;
   bottom: 0;
-  left: 95px;
+  left: 19px;
 }
-footer .container {
+footer .container-global {
   align-items: center;
   justify-content: space-between;
   padding: 10px 41px;
@@ -97,7 +103,7 @@ footer .baseboard {
   }
 }
 @media (max-width: 1091px) {
-  footer .container {
+  footer .container-global {
     flex-direction: column;
   }
   footer .logo {
@@ -113,10 +119,10 @@ footer .baseboard {
     font-size: 3.5rem;
     gap: 30px;
   }
-  header .container img {
+  header .container-global img {
     width: 50px;
   }
-  header .container img:last-child {
+  header .container-global img:last-child {
     width: 30px;
   }
   footer h3 {
