@@ -8,13 +8,21 @@
 }
 a {
   color: inherit;
+  font-size: inherit;
 }
 main {
   font-family: "DM Sans";
+}
+.container-global {
+  max-width: 1250px;
+  padding: 20px 41px;
+  margin: 0 auto;
 }
 :root {
   --color-orange: #f78520;
   --color-white: #fff;
   --color-grey: #5a5a5a;
   --color-pink: #81013a;
+  --color-pink-2: #bf0259;
+  --color-green: #9fd443;
 }
