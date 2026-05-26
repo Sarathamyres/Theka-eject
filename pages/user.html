@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/src/styles/user.css">
+  <link rel="stylesheet" href="/src/styles/global.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" rel="stylesheet">
+  <title>Login</title>
+</head>
+
+<body>
+  <main id="page-user-email">
+    <div class="container-banner">
+    </div>
+    <div class="container-form">
+      <form id="user-form-login" method="post">
+        <h1>Login</h1>
+        <div class="box-input-user">
+          <label for="user-email">E-mail</label>
+          <input type="email" name="email" id="user-email" placeholder="seuemail@email.com">
+        </div>
+        <div class="box-input-user">
+          <label for="">Senha</label>
+          <input type="password" name="password" id="password" placeholder="oooooo">
+        </div>
+        <div class="links-new-password-and-register-user">
+          <a id="forgot-password">Esqueceu a senha?</a>
+          <a class="create-account">Ainda não tem cadastro?</a>
+        </div>
+        <div class="buttons">
+          <button id="user-button-enter" class="enter">Entrar</button>
+        </div>
+      </form>
+      <form class="active" id="user-form-email-new-password">
+        <h1>Recuperar senha</h1>
+        <div class="box-input-user">
+          <label for="user-email-new-password">E-mail</label>
+          <input type="email" name="email" id="user-email-new-password" placeholder="seuemail@email.com">
+        </div>
+        <div class="links-new-password-and-register-user">
+          <a class="create-account">Ainda não tem cadastro?</a>
+        </div>
+        <div class="buttons">
+          <button class="back">Voltar</button>
+          <button id="save-new-password">Enviar</button>
+        </div>
+      </form>
+      <form id="user-form-new-password">
+        <h1>Nova senha</h1>
+
+        <div class="box-input-user">
+          <label for="new-password">Nova senha</label>
+          <input type="password" name="new-password" id="new-password" placeholder="oooooo">
+        </div>
+
+        <div class="box-input-user">
+          <label for="">Confirmar nova senha </label>
+          <input type="password" name="new-password-confirm" id="new-password-confirm" placeholder="oooooo">
+        </div>
+        <div class="buttons">
+          <button id="save-new-password">Salvar</button>
+        </div>
+      </form>
+      <form id="user-form-register">
+        <h1>Cadastro</h1>
+        <div class="box-input-user">
+          <label for="register-name">Nome completo</label>
+          <input type="text" name="username" id="register-name" placeholder="Seu nome">
+        </div>
+        <div class="box-input-user">
+          <label for="register-email">E-mail</label>
+          <input type="email" name="email" id="register-email" placeholder="Seu email">
+        </div>
+
+        <div class="box-input-user"> <label for="register-password">Senha</label>
+          <input type="password" name="password" id="register-password" placeholder="oooooo">
+        </div>
+
+        <div class="box-input-user">
+          <label for="password_confirm">Confirmar senha</label>
+          <input type="password" name="password_confirm" id="password_confirm" placeholder="oooooo">
+
+        </div>
+
+        <div class="buttons">
+          <button type="button" class="back">Voltar</button>
+          <button type="submit" class="register">Cadastrar</button>
+        </div>
+      </form>
+    </div>
+  </main>
+  <script src="/src/scripts/login.js"></script>
+  <script src="/src/scripts/register.js"></script>
+  <script src="/src/scripts/register.js"></script>
+  <script src="/src/scripts/recoverpassoword.js"></script>
+
+</body>
+
+</html>
