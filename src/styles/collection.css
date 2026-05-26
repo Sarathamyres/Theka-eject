@@ -1,10 +1,6 @@
-main {
-  max-width: 1250px;
-  padding: 20px 41px;
-  margin: 0 auto;
-}
 .filter {
   margin: 100px 0;
+  margin: 0 auto;
 }
 .filter h3 {
   font-size: 6.4rem;
@@ -24,20 +20,23 @@ main {
   width: 500px;
   font-size: 1.8rem;
   border: none;
-}  font-size: 1.8rem;
-
+}
 .filter input::placeholder {
   font-size: 1.8rem;
+  color: var(--color-pink);
 }
 .filter .category {
   display: flex;
   gap: 20px;
 }
-.filter selectz {
-  display: flex;
-  gap: 20px;
+.filter select {
+  border-radius: 20px;
+  font-size: 1.8rem;
+  padding: 10px 20px;
+  border: 1px solid var(--color-pink);
+  color: var(--color-pink);
 }
-.filter .search {
+.filter button.search {
   display: flex;
   font-size: 1.8rem;
   padding: 10px 20px;
@@ -57,6 +56,7 @@ main {
   grid-template-columns: repeat(5, 1fr);
   gap: 10px;
   place-items: center;
+  align-items: center;
 }
 .collection-books .collection-books_list li {
   position: relative;
@@ -99,8 +99,10 @@ main {
   border-radius: 20px;
   position: absolute;
   top: 250px;
-  right: -25px;
+  right: 10px;
   z-index: 1;
+  transition: ease 0.2s;
+  cursor: pointer;
 }
 .addition:hover {
   width: 200px;
@@ -116,18 +118,30 @@ main {
     grid-template-columns: repeat(3, 1fr);
   }
 }
+@media (max-width: 983px) {
+  .filter select {
+    display: none;
+  }
+}
 @media (max-width: 880px) {
   .collection-books .collection-books_list {
     grid-template-columns: repeat(2, 1fr);
   }
-}
-@media (max-width: 631px) {
-  .collection-books .collection-books_list {
-    grid-template-columns: repeat(1, 1fr);
+  .collection-books {
+    padding: 0;
   }
 }
 @media (max-width: 500px) {
-  .collection-books .collection-books_list {
-    grid-template-columns: repeat(1, 1fr);
+  .main-collection .container-global {
+    padding: 20px;
+  }
+  .filter h3 {
+    font-size: 4rem;
+  }
+  .filter button.search {
+    padding: 10px;
+  }
+  .filter button.search span {
+    display: none;
   }
 }
