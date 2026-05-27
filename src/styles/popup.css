@@ -1,13 +1,36 @@
+body {
+  position: relative;
+}
+/* .overflow {
+  display: none;
+  background-color: transparent;
+  width: 1200px;
+  height: 700px;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 2;
+}
+*/
+dialog{
+  margin: 100px auto;
+  border: none;
+  border-radius: 20px;
+}
 .popup-form {
-  margin: 40px;
+  background-color: var(--color-white);
   display: flex;
   flex-direction: column;
+  align-items: center;
+  margin: 0 auto;
+  padding: 0 20px;
 }
 form {
   display: flex;
   gap: 20px;
 }
-.box-image-book{
+.box-image-book {
   display: flex;
   align-items: start;
   justify-content: center;
@@ -39,7 +62,7 @@ form {
   font-size: 4rem;
   color: var(--color-pink);
 }
-form .subcontainer-form .column div{
+form .subcontainer-form .column div {
   padding: 5px;
 }
 form .subcontainer-form label {
@@ -60,8 +83,9 @@ form .subcontainer-form input {
 .box-support div input {
   width: 100%;
 }
-form .subcontainer-form input::placeholder {
-  font-size: 1.2rem;
+input::placeholder {
+  font-size: 1.5rem;
+  color: violet;
 }
 form .subcontainer-form .box-input {
   width: 421px;
