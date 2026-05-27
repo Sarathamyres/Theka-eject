@@ -85,13 +85,21 @@
 }
 .figure-1 {
   transform: rotate(5deg);
-  z-index: 3;
+  z-index: 5;
 }
 .figure-2 {
   transform: rotate(-5deg);
-  z-index: 2;
+  z-index: 4;
 }
 .figure-3 {
+  transform: rotate(10deg);
+  z-index: 3;
+}
+.figure-4 {
+  transform: rotate(5deg);
+  z-index: 2;
+}
+.figure-5 {
   transform: rotate(10deg);
   z-index: 1;
 }
