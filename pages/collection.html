@@ -4,241 +4,409 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="/src/styles/global.css">
+  <link rel="stylesheet" href="/src/styles/header-footer.css">
   <link rel="stylesheet" href="/src/styles/collection.css">
+  <link rel="stylesheet" href="/src/styles/popup.css">
+
 
 
   <title>Acervo</title>
 </head>
 
 <body>
-  <main>
-    <section class="filter">
-      <h3>Veja nosso catálogo</h3>
-      <div class="container-filter">
-        <input type="text" placeholder="Fazer busca">
-        <div class="category">
-          <select id="gender">
-            <option value="">Romance</option>
-            <option value="romance">Romance</option>
-            <option value="horror">Terror</option>
-            <option value="tale">Conto</option>
-            <option value="fiction">Ficção</option>
-          </select>
-          <select id="publisher">
-            <option value="">Editora</option>
-            <option value="c-letter">Companhia das Letras</option>
-            <option value="intrinseca">Intrínseca</option>
-            <option value="record">Record</option>
-            <option value="darkside">DarkSide</option>
-          </select>
-          <button class="search">
-            Buscar
-            <img src="/src/images/icons/search.svg" alt="">
-          </button>
-        </div>
+  <header>
+    <div class="container-global">
+      <div class="logo">
+        <img class="logo-little" src="/src/images/LOGOTIPO.svg" alt="LOGOTIPO">
+        <img class="logo-gray" src="/src/images/LOGOTIPO-grey.svg" alt="LOGOTIPO">
       </div>
-    </section>
-    <section class="collection-books">
-      <div class="addition">+</div>
-      <ul class="collection-books_list">
-        <li>
-          <figure>
-            <img src="../../src/images/books/CAPA LIVRO (1).png" alt="Capa Livro 1">
-            <figcaption>
-              <strong>Título do Livro</strong>
-              <p>Autor do Livro, 200</p>
-              <button>
-                <img src="/src/images/icons/eye.svg" alt="">
-              </button>
-            </figcaption>
-          </figure>
-        </li>
+      <nav class="navbar-menu">
+        <ul class="navbar-list">
+          <li><a href="home.html">Início</a></li>
+          <li><a href="collection.html">Acervo</a></li>
+          <li>Sobre nós</li>
+          <li>Contato</li>
+        </ul>
+      </nav>
+      <img class="icon-user-menu" src="/src/images/SAIR.svg" alt="">
+    </div>
+  </header>
+  <main class="main-collection">
+    <div class="container-global">
+      <section class="filter">
+        <h3>Veja nosso catálogo</h3>
+        <div class="container-filter">
+          <input type="text" id="text-search" placeholder="Fazer busca...">
+          <div class="category">
+            <select id="gender">
+              <option value="">Romance</option>
+              <option value="romance">Romance</option>
+              <option value="horror">Terror</option>
+              <option value="tale">Conto</option>
+              <option value="fiction">Ficção</option>
+            </select>
+            <select id="publisher">
+              <option value="">Editora</option>
+              <option value="c-letter">Companhia das Letras</option>
+              <option value="intrinseca">Intrínseca</option>
+              <option value="record">Record</option>
+              <option value="darkside">DarkSide</option>
+            </select>
+            <button class="search">
+              <span>Buscar</span>
+              <img src="/src/images/icons/search.svg" alt="">
+            </button>
+          </div>
+        </div>
+      </section>
+      <section class="collection-books">
+        <div class="addition">+</div>
+        <ul class="collection-books_list">
+          <li>
+            <figure>
+              <img src="../../src/images/books/CAPA LIVRO (1).png" alt="Capa Livro 1">
+              <figcaption>
+                <strong>Título do Livro</strong>
+                <p>Autor do Livro, 200</p>
+                <button>
+                  <img src="/src/images/icons/eye.svg" alt="">
+                </button>
+              </figcaption>
+            </figure>
+          </li>
 
-        <li>
-          <figure>
-            <img src="../../src/images/books/CAPA LIVRO (2).png" alt="Capa Livro 2">
-            <figcaption>
-              <strong>Título do Livro</strong>
-              <p>Autor do Livro, 200</p>
-              <button>
-                <img src="/src/images/icons/eye.svg" alt="">
-              </button>
-            </figcaption>
-          </figure>
-        </li>
+          <li>
+            <figure>
+              <img src="../../src/images/books/CAPA LIVRO (2).png" alt="Capa Livro 2">
+              <figcaption>
+                <strong>Título do Livro</strong>
+                <p>Autor do Livro, 200</p>
+                <button>
+                  <img src="/src/images/icons/eye.svg" alt="">
+                </button>
+              </figcaption>
+            </figure>
+          </li>
 
-        <li>
-          <figure>
-            <img src="../../src/images/books/CAPA LIVRO (3).png" alt="Capa Livro 3">
-            <figcaption>
-              <strong>Título do Livro</strong>
-              <p>Autor do Livro, 200</p>
-              <button>
-                <img src="/src/images/icons/eye.svg" alt="">
-              </button>
-            </figcaption>
-          </figure>
-        </li>
+          <li>
+            <figure>
+              <img src="../../src/images/books/CAPA LIVRO (3).png" alt="Capa Livro 3">
+              <figcaption>
+                <strong>Título do Livro</strong>
+                <p>Autor do Livro, 200</p>
+                <button>
+                  <img src="/src/images/icons/eye.svg" alt="">
+                </button>
+              </figcaption>
+            </figure>
+          </li>
 
-        <li>
-          <figure>
-            <img src="../../src/images/books/CAPA LIVRO (4).png" alt="Capa Livro 4">
-            <figcaption>
-              <strong>Título do Livro</strong>
-              <p>Autor do Livro, 200</p>
-              <button>
-                <img src="/src/images/icons/eye.svg" alt="">
-              </button>
-            </figcaption>
-          </figure>
-        </li>
+          <li>
+            <figure>
+              <img src="../../src/images/books/CAPA LIVRO (4).png" alt="Capa Livro 4">
+              <figcaption>
+                <strong>Título do Livro</strong>
+                <p>Autor do Livro, 200</p>
+                <button>
+                  <img src="/src/images/icons/eye.svg" alt="">
+                </button>
+              </figcaption>
+            </figure>
+          </li>
 
-        <li>
-          <figure>
-            <img src="../../src/images/books/CAPA LIVRO (5).png" alt="Capa Livro 5">
-            <figcaption>
-              <strong>Título do Livro</strong>
-              <p>Autor do Livro, 200</p>
-              <button>
-                <img src="/src/images/icons/eye.svg" alt="">
-              </button>
-            </figcaption>
-          </figure>
-        </li>
+          <li>
+            <figure>
+              <img src="../../src/images/books/CAPA LIVRO (5).png" alt="Capa Livro 5">
+              <figcaption>
+                <strong>Título do Livro</strong>
+                <p>Autor do Livro, 200</p>
+                <button>
+                  <img src="/src/images/icons/eye.svg" alt="">
+                </button>
+              </figcaption>
+            </figure>
+          </li>
 
-        <li>
-          <figure>
-            <img src="../../src/images/books/CAPA LIVRO (6).png" alt="Capa Livro 6">
-            <figcaption>
-              <strong>Título do Livro</strong>
-              <p>Autor do Livro, 200</p>
-              <button>
-                <img src="/src/images/icons/eye.svg" alt="">
-              </button>
-            </figcaption>
-          </figure>
-        </li>
+          <li>
+            <figure>
+              <img src="../../src/images/books/CAPA LIVRO (6).png" alt="Capa Livro 6">
+              <figcaption>
+                <strong>Título do Livro</strong>
+                <p>Autor do Livro, 200</p>
+                <button>
+                  <img src="/src/images/icons/eye.svg" alt="">
+                </button>
+              </figcaption>
+            </figure>
+          </li>
 
-        <li>
-          <figure>
-            <img src="../../src/images/books/CAPA LIVRO (7).png" alt="Capa Livro 7">
-            <figcaption>
-              <strong>Título do Livro</strong>
-              <p>Autor do Livro, 200</p>
-              <button>
-                <img src="/src/images/icons/eye.svg" alt="">
-              </button>
-            </figcaption>
-          </figure>
-        </li>
+          <li>
+            <figure>
+              <img src="../../src/images/books/CAPA LIVRO (7).png" alt="Capa Livro 7">
+              <figcaption>
+                <strong>Título do Livro</strong>
+                <p>Autor do Livro, 200</p>
+                <button>
+                  <img src="/src/images/icons/eye.svg" alt="">
+                </button>
+              </figcaption>
+            </figure>
+          </li>
 
-        <li>
-          <figure>
-            <img src="../../src/images/books/CAPA LIVRO (8).png" alt="Capa Livro 8">
-            <figcaption>
-              <strong>Título do Livro</strong>
-              <p>Autor do Livro, 200</p>
-              <button>
-                <img src="/src/images/icons/eye.svg" alt="">
-              </button>
-            </figcaption>
-          </figure>
-        </li>
+          <li>
+            <figure>
+              <img src="../../src/images/books/CAPA LIVRO (8).png" alt="Capa Livro 8">
+              <figcaption>
+                <strong>Título do Livro</strong>
+                <p>Autor do Livro, 200</p>
+                <button>
+                  <img src="/src/images/icons/eye.svg" alt="">
+                </button>
+              </figcaption>
+            </figure>
+          </li>
 
-        <li>
-          <figure>
-            <img src="../../src/images/books/CAPA LIVRO (10).png" alt="Capa Livro 9">
-            <figcaption>
-              <strong>Título do Livro</strong>
-              <p>Autor do Livro, 200</p>
-              <button>
-                <img src="/src/images/icons/eye.svg" alt="">
-              </button>
-            </figcaption>
-          </figure>
-        </li>
+          <li>
+            <figure>
+              <img src="../../src/images/books/CAPA LIVRO (10).png" alt="Capa Livro 9">
+              <figcaption>
+                <strong>Título do Livro</strong>
+                <p>Autor do Livro, 200</p>
+                <button>
+                  <img src="/src/images/icons/eye.svg" alt="">
+                </button>
+              </figcaption>
+            </figure>
+          </li>
 
-        <li>
-          <figure>
-            <img src="../../src/images/books/CAPA LIVRO (11).png" alt="Capa Livro 10">
-            <figcaption>
-              <strong>Título do Livro</strong>
-              <p>Autor do Livro, 200</p>
-              <button>
-                <img src="/src/images/icons/eye.svg" alt="">
-              </button>
-            </figcaption>
-          </figure>
-        </li>
+          <li>
+            <figure>
+              <img src="../../src/images/books/CAPA LIVRO (11).png" alt="Capa Livro 10">
+              <figcaption>
+                <strong>Título do Livro</strong>
+                <p>Autor do Livro, 200</p>
+                <button>
+                  <img src="/src/images/icons/eye.svg" alt="">
+                </button>
+              </figcaption>
+            </figure>
+          </li>
 
-        <li>
-          <figure>
-            <img src="../../src/images/books/CAPA LIVRO (12).png" alt="Capa Livro 11">
-            <figcaption>
-              <strong>Título do Livro</strong>
-              <p>Autor do Livro, 200</p>
-              <button>
-                <img src="/src/images/icons/eye.svg" alt="">
-              </button>
-            </figcaption>
-          </figure>
-        </li>
+          <li>
+            <figure>
+              <img src="../../src/images/books/CAPA LIVRO (12).png" alt="Capa Livro 11">
+              <figcaption>
+                <strong>Título do Livro</strong>
+                <p>Autor do Livro, 200</p>
+                <button>
+                  <img src="/src/images/icons/eye.svg" alt="">
+                </button>
+              </figcaption>
+            </figure>
+          </li>
 
-        <li>
-          <figure>
-            <img src="../../src/images/books/CAPA LIVRO (13).png" alt="Capa Livro 12">
-            <figcaption>
-              <strong>Título do Livro</strong>
-              <p>Autor do Livro, 200</p>
-              <button>
-                <img src="/src/images/icons/eye.svg" alt="">
-              </button>
-            </figcaption>
-          </figure>
-        </li>
+          <li>
+            <figure>
+              <img src="../../src/images/books/CAPA LIVRO (13).png" alt="Capa Livro 12">
+              <figcaption>
+                <strong>Título do Livro</strong>
+                <p>Autor do Livro, 200</p>
+                <button>
+                  <img src="/src/images/icons/eye.svg" alt="">
+                </button>
+              </figcaption>
+            </figure>
+          </li>
 
-        <li>
-          <figure>
-            <img src="../../src/images/books/CAPA LIVRO (16).png" alt="Capa Livro 13">
-            <figcaption>
-              <strong>Título do Livro</strong>
-              <p>Autor do Livro, 200</p>
-              <button>
-                <img src="/src/images/icons/eye.svg" alt="">
-              </button>
-            </figcaption>
-          </figure>
-        </li>
+          <li>
+            <figure>
+              <img src="../../src/images/books/CAPA LIVRO (16).png" alt="Capa Livro 13">
+              <figcaption>
+                <strong>Título do Livro</strong>
+                <p>Autor do Livro, 200</p>
+                <button>
+                  <img src="/src/images/icons/eye.svg" alt="">
+                </button>
+              </figcaption>
+            </figure>
+          </li>
 
-        <li>
-          <figure>
-            <img src="../../src/images/books/CAPA LIVRO (17).png" alt="Capa Livro 14">
-            <figcaption>
-              <strong>Título do Livro</strong>
-              <p>Autor do Livro, 200</p>
-              <button>
-                <img src="/src/images/icons/eye.svg" alt="">
-              </button>
-            </figcaption>
-          </figure>
-        </li>
+          <li>
+            <figure>
+              <img src="../../src/images/books/CAPA LIVRO (17).png" alt="Capa Livro 14">
+              <figcaption>
+                <strong>Título do Livro</strong>
+                <p>Autor do Livro, 200</p>
+                <button>
+                  <img src="/src/images/icons/eye.svg" alt="">
+                </button>
+              </figcaption>
+            </figure>
+          </li>
 
-        <li>
-          <figure>
-            <img src="../../src/images/books/CAPA LIVRO (18).png" alt="Capa Livro 15">
-            <figcaption>
-              <strong>Título do Livro</strong>
-              <p>Autor do Livro, 200</p>
-              <button>
-                <img src="/src/images/icons/eye.svg" alt="">
-              </button>
-            </figcaption>
-          </figure>
-        </li>
-      </ul>
-    </section>
+          <li>
+            <figure>
+              <img src="../../src/images/books/CAPA LIVRO (18).png" alt="Capa Livro 15">
+              <figcaption>
+                <strong>Título do Livro</strong>
+                <p>Autor do Livro, 200</p>
+                <button>
+                  <img src="/src/images/icons/eye.svg" alt="">
+                </button>
+              </figcaption>
+            </figure>
+          </li>
+        </ul>
+      </section>
+    </div>
   </main>
+  <dialog id="add-material">
+    <div class="popup-form">
+      <div class="tittle-form">
+        <h2>Adicionar material ao catálogo</h2>
+      </div>
+      <div class="container-form">
+        <form action=" " method="POST">
+          <div class="box-image-book">
+            <img src="/src/images/books/CAPA LIVRO (10).png" alt="" class="image-book">
+          </div>
+          <div class="subcontainer-form">
+            <div class="column column-one">
+              <div class="box-input">
+                <label>Título do material:</label>
+                <input type="text" id="tittle" name="tittle" required placeholder="Inserir título do material">
+              </div>
+              <div class="box-support">
+                <div>
+                  <label>N. de páginas</label>
+                  <input type="number" id="number-pages" name="number-pages" required placeholder="ooo">
+                </div>
+
+                <div>
+                  <label>ISBM </label>
+                  <input type="number" id="isbm" name="isbm" required placeholder="ooo">
+                </div>
+              </div>
+
+            </div>
+            <div class="column column-two">
+              <div class="box-input">
+                <label>Autor:</label>
+                <input type="name" id="author" name="author" required placeholder="ex: Machado de Assis">
+              </div>
+              <div class="box-support">
+
+                <div>
+                  <label>D. publicação:</label>
+                  <input type="date" id="publication-date" name="publication-date" required placeholder="oooo">
+                </div>
+
+                <div>
+                  <label>Editora:</label>
+                  <input type="text" id="published" name="published" required placeholder="oooo">
+                </div>
+              </div>
+            </div>
+            <div class="column column-three">
+              <div>
+                <label for="">Resumo do material:</label>
+                <input class="input-text" type="text" placeholder="Inserir um breve resumo do material.">
+              </div>
+            </div>
+            <div class="buttons-submit" id="box-two-buttons">
+              <div>
+                <button id="cancel">Cancelar</button>
+                <button id="save">Salvar</button>
+              </div>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </dialog>
+  <footer>
+    <div class="container-global">
+      <div class="logo">
+        <img src="/src/images/LOGOTIPO-pink.svg" alt="LOGOTIPO PINK">
+        <small>Aventuras literárias</small>
+      </div>
+      <nav>
+        <div class="nav-box contacts">
+          <h3>Contato</h3>
+          <ul class="contacts-list">
+            <li>
+              <a href="" target="_blank">
+                <img src="/src/images/icons/phone.svg" alt="icon phone">
+                <p>(84) 9 9999-2222</p>
+              </a>
+            </li>
+            <li>
+              <a href="www.theka.com.br" target="_blank">
+                <img src="/src/images/icons/globo.svg" alt="icon internet">
+                <p>www.theka.com.br</p>
+              </a>
+            </li>
+            <li>
+              <a href="">
+                <img src="/src/images/icons/map.svg" alt="icon map">
+                <p>Natal, RN</p>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="nav-box social-media">
+          <h3>Redes sociais</h3>
+          <ul class="social-media_list">
+            <li>
+              <a href="" target="_blank">
+                <img src="/src/images/icons/instagram.svg" alt="icon instagram">
+                <p>@theka.biblioteca</p>
+              </a>
+            </li>
+            <li>
+              <a href="" target="_blank">
+                <img src="/src/images/icons/tioktok.svg" alt="icon tik-tok">
+                <p>@theka.biblioteca</p>
+              </a>
+            </li>
+            <li>
+              <a href="" target="_blank">
+                <img src="/src/images/icons/x.svg" alt="icon X">
+                <p>@theka.biblioteca</p>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="nav-box help">
+          <h3>Ajuda</h3>
+          <ul class="help-list">
+            <li>
+              <a href="" target="_blank">
+                <img src="/src/images/icons/!.svg" alt="Icon Central de ajuda">
+                <p>Central de ajuda</p>
+              </a>
+            </li>
+            <li>
+              <a href="" target="_blank">
+                <img src="/src/images/icons/questions.svg" alt="icon FAQ">
+                <p>FAQ</p>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+    <div class="baseboard">
+      <small>
+        Mockup desenvolvido por EJECT
+      </small>
+    </div>
+  </footer>
+  <script src="/src/scripts/collection.js"></script>
 </body>
 
 </html>
