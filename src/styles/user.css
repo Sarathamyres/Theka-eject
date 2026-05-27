@@ -13,7 +13,7 @@ main .container-banner {
   background-color: var(--color-white);
   width: 50%;
   position: relative;
-  right: 15px;
+  right: 20px;
   border-radius: 20px;
   display: flex;
   align-items: center;
@@ -21,15 +21,24 @@ main .container-banner {
   flex-direction: column;
 }
 main form {
-  display: flex;
+  display: none;
   flex-direction: column;
   color: var(--color-orange);
   margin-left: 20px;
+}
+.active {
+  display: flex;
 }
 form h1 {
   font-size: 6.4rem;
   font-weight: 700;
   margin-bottom: 80px;
+}
+#user-form-email-new-password h1 {
+  font-size: 5rem;
+}
+#user-form-email-new-password .box-input-user input {
+  width: 100%;
 }
 form #recover-password {
   font-size: 5.4rem;
@@ -37,32 +46,40 @@ form #recover-password {
 main form label {
   display: flex;
   flex-direction: column;
-  padding: 10px 0;
-  font-size: 1.8rem;
+  padding: 10px 0 5px;
+  font-size: 2rem;
   font-weight: 700;
 }
 main form input {
-  padding: 10px 20px;
-  margin-top: 10px;
+  padding: 15px;
   border-radius: 20px;
-  border-color: var(--color-orange);
+  border: 1px solid var(--color-orange);
+  font-size: 1.5rem;
   max-width: 380px;
   min-width: 300px;
 }
 main form input::placeholder {
   color: var(--color-orange);
+  font-size: 1rem;
 }
-form a {
+form .links-new-password-and-register-user {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 30px;
+  cursor: pointer;
+}
+form .links-new-password-and-register-user a {
   margin: 0 auto;
   font-size: 1.5rem;
 }
-form a:hover {
+form .links-new-password-and-register-user a:hover {
   text-decoration: underline;
 }
-form a:first-of-type {
+form .links-new-password-and-register-user a:first-of-type {
   padding-top: 10px;
 }
-form a:last-of-type {
+form .links-new-password-and-register-user a:last-of-type {
   padding-bottom: 10px;
 }
 form .buttons {
