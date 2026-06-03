@@ -1,0 +1,29 @@
+.banner {
+  background-color: var(--color-pink-3);
+  display: flex;
+  height: 600px;
+}
+.banner-aboutUs {
+  height: 600px;
+  width: 100%;
+  background-image: url("/src/images/image-banner-aboutUs.png");
+  background-repeat: no-repeat;
+}
+.text {
+  background-color: var(--color-pink-3);
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  margin-right: 200px;
+  margin-bottom: 40px;
+}
+.text img {
+  width: 487px;
+}
+.text p {
+  font-size: 1.8rem;
+  color: var(--color-white);
+  max-width: 100ch;
+  text-align: justify;
+}
