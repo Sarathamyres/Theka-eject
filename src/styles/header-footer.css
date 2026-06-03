@@ -23,6 +23,37 @@ header .navbar-list {
 header .navbar-list li {
   cursor: pointer;
 }
+/* === header da página sobre nós === */
+#about-us header {
+  position: absolute;
+  width: 100%;
+  padding-top: 10px;
+}
+header .container-global {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+header .logo {
+  border-radius: 50%;
+}
+header .navbar-about-us {
+  display: flex;
+  width: 70%;
+  border: 2px solid #b87293;
+  box-shadow: rgba(180, 165, 173, 0.2) 0px 7px 29px 0px;
+  padding: 10px;
+  border-radius: 50px;
+  gap: 50px;
+}
+header .navbar-list {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  color: var(--color-white);
+}
+/* === Fim do header da página sobre nós === */
+
 footer {
   background-color: var(--color-pink);
   color: var(--color-white);
