@@ -27,3 +27,82 @@
   max-width: 100ch;
   text-align: justify;
 }
+.swipe-list {
+  display: flex;
+  justify-content: space-between;
+  font-size: 2.4rem;
+  color: var(--color-pink);
+  font-weight: 700;
+  font-family: Inter;
+  padding: 20px;
+}
+.swipe-list li {
+  border: 3px solid var(--color-pink);
+  padding: 5px;
+  border-radius: 20px;
+}
+.banner-main {
+  display: flex;
+  justify-content: space-between;
+  background-color: var(--color-green);
+  border-radius: 20px;
+  overflow: hidden;
+}
+.banner-main .introduction h1 {
+  font-family: "DM Sans";
+  font-size: 6.4rem;
+}
+.banner-main .introduction p {
+  font-size: 1.8rem;
+  max-width: 50ch;
+  text-align: justify;
+  line-height: 140%;
+}
+.banner-main .introduction {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  margin-left: 100px;
+}
+.our-values {
+  font-size: 6.4rem;
+  font-weight: 700;
+  color: var(--color-pink);
+  padding: 70px 0;
+}
+.our-values h2 {
+  font-size: 6.4rem;
+}
+.our-values .box-values h3 {
+  padding: 20px;
+  font-size: 3.2rem;
+  font-weight: 700;
+}
+.our-values .boxes {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 30px;
+}
+.our-values .box-values {
+  width: 387px;
+  height: 266px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  overflow: hidden;
+  border-radius: 20px;
+}
+.our-values .box-values img {
+  height: 200px;
+}
+.our-values .box-values:first-child {
+  background-color: var(--color-yellow);
+}
+.our-values .box-values:nth-child(2) {
+  background-color: var(--color-green);
+  color: var(--color-orange);
+}
+.our-values .box-values:nth-child(3) {
+  background-color: var(--color-pink);
+  color: var(--color-orange);
+}
