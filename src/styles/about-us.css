@@ -1,32 +1,43 @@
+#about-us header {
+  background-color: var(--color-pink-2);
+}
+.nav-mobile {
+  display: none;
+}
+#about-us header .logo {
+  border: 1px solid var(--color-white);
+}
+#about-us .navbar-menu {
+  display: flex;
+  border: 1px solid var(--color-white);
+  color: var(--color-white);
+  border-radius: 20px;
+  padding: 5px;
+  width: 80%;
+  gap: 10px;
+}
+#about-us .navbar-menu a {
+  color: var(--color-white);
+}
 .banner {
   background-color: var(--color-pink-2);
   display: flex;
-  height: 700px;
-  padding-bottom: 20px;
-  display: flex;
   justify-content: space-between;
-  gap: 50px;
+  padding-top: 90px;
 }
-.vector-aboutUs {
-  display: flex;
-  align-items: center;
+.vector-about-us {
+  width: 50%;
 }
-.vector-aboutUs img {
-  width: 700px;
-}
-.text {
-  background-color: transparent;
+.text-banner {
   padding: 20px;
+  width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: end;
   margin-right: 200px;
   margin-bottom: 40px;
 }
-.text img {
-  width: 487px;
-}
-.text p {
+.text-banner p {
   font-size: 1.8rem;
   color: var(--color-white);
   max-width: 100ch;
@@ -55,26 +66,21 @@
 }
 .banner-main {
   display: flex;
-  justify-content: space-between;
   background-color: var(--color-green);
   border-radius: 20px;
   overflow: hidden;
 }
-.banner-main .introduction h1 {
-  font-family: "DM Sans";
+.introduction {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  padding: 0 30px;
+}
+.introduction h1 {
   font-size: 6.4rem;
 }
-.banner-main .introduction p {
+.introduction p {
   font-size: 1.8rem;
-  max-width: 50ch;
-  text-align: justify;
-  line-height: 140%;
-}
-.banner-main .introduction {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  margin-left: 100px;
 }
 .our-values {
   font-size: 6.4rem;
@@ -146,9 +152,40 @@
 .container-team .box-team:nth-child(4) {
   background-color: var(--color-green-2);
 }
+@media (max-width: 546px) {
+  #about-us .navbar-menu {
+    display: none;
+  }
+  #about-us header .logo img {
+    width: 70px;
+  }
+  #about-us .nav-mobile {
+    display: block;
+    border: 1px solid var(--color-white);
+    padding: 10px 50px;
+    border-radius: 50px;
+  }
+  #about-us .nav-mobile img {
+    width: 174px;
+  }
+}
+@media (max-width: 1096px) {
+  .banner {
+    flex-direction: column;
+  }
+  .vector-about-us {
+    width: 100%;
+  }
+  .text-banner img {
+    width: 450px;
+  }
+}
 @media (max-width: 500px) {
   .our-values .boxes {
     flex-direction: column;
+  }
+  .text-banner img {
+    width: 177px;
   }
 }
 @media (max-width: 1322px) {
@@ -164,5 +201,22 @@
 @media (max-width: 730px) {
   .container-team {
     grid-template-columns: 286px;
+  }
+}
+@media (max-width: 500px) {
+  .banner-main {
+    flex-direction: column;
+    align-items: center;
+  }
+  .introduction h1 {
+    font-size: 4rem;
+    margin: 20px 0;
+  }
+  .image-banner {
+    transform: rotate(90deg);
+    width: fit-content;
+  }
+  .image-banner img {
+    width: 250px;
   }
 }
