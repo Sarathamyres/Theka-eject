@@ -50,8 +50,16 @@ if (backForLogin) {
 }
 userFormLogin.addEventListener("submit", (event) => {
   event.preventDefault();
-  const formLogin = new FormData(userFormLogin);
-  const dataFormLogin = Object.fromEntries(formLogin.entries());
+  //const formLogin = new FormData(userFormLogin);
+  const userEmail = document.getElementById("user-email");
+  const userPassword = document.getElementById("password");
+  if (!userEmail && !userPassword) {
+    return;
+  }
+  const dataFormLogin = {
+    email: userEmail.value,
+    password: userPassword.value,
+  };
   fetch("https://thekaapideploy2.pythonanywhere.com/auth/token/", {
     method: "POST",
     headers: {
@@ -66,8 +74,14 @@ userFormLogin.addEventListener("submit", (event) => {
       return res.json();
     })
     .then((data) => {
+      const tokenAccess = data.access;
+      localStorage.setItem("token", tokenAccess);
+      const tokenRefresh = data.refresh;
+      localStorage.setItem("refresh", tokenRefresh);
+
       console.log(data);
       alert("Login realizado com sucesso!");
+      window.location.href = "/pages/home.html";
     })
     .catch((error) => {
       console.error(error);
