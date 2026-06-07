@@ -1,0 +1,105 @@
+#contact-page {
+  font-family: Inter;
+}
+#contact-page h1 {
+  font-size: 6.4rem;
+  margin-bottom: 10px;
+  color: var(--color-pink);
+}
+.container-contact {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  color: var(--color-pink);
+  width: 100%;
+}
+.map {
+  width: 692px;
+}
+iframe {
+  width: 100%;
+}
+.map p {
+  font-size: 1.8rem;
+  color: var(--color-grey);
+}
+.map .buttons-iframe {
+  padding: 20px 0;
+}
+.map .buttons-iframe button {
+  width: 238px;
+  height: 44px;
+  border-radius: 20px;
+  font-size: 1.8rem;
+  color: var(--color-white);
+  margin-bottom: 10px;
+}
+.map .buttons-iframe button:first-child {
+  background-color: var(--color-pink);
+  border: none;
+  margin-right: 10px;
+}
+.map .buttons-iframe button:nth-child(2) {
+  background-color: var(--color-grey);
+  border: none;
+}
+form {
+  background-color: #f8f8f8;
+  padding: 10px 20px;
+  width: 508px;
+  height: 542px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.container-contact form h2 {
+  font-size: 3.2rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+.container-contact label {
+  font-size: 2.4rem;
+  font-weight: 700;
+  margin-bottom: 5px;
+  display: flex;
+}
+.container-contact .box-input {
+  display: flex;
+  flex-direction: column;
+  padding: 10px 0;
+}
+.container-contact .box-input input {
+  padding: 10px;
+  border-radius: 20px;
+  border-color: var(--color-pink);
+}
+.container-contact .box-input input::placeholder {
+  font-size: 10px;
+  color: var(--color-pink);
+}
+.container-contact .buttons {
+  display: flex;
+  justify-content: end;
+  padding: 20px 0;
+}
+.container-contact .buttons button {
+  width: 112px;
+  height: 44px;
+  font-size: 1.8rem;
+  border-radius: 20px;
+  border: none;
+}
+.container-contact .buttons button:first-child {
+  border: 2px solid var(--color-pink);
+  color: var(--color-pink);
+  margin-right: 10px;
+}
+.container-contact .buttons button:nth-child(2) {
+  background-color: var(--color-pink);
+  color: var(--color-white);
+}
+@media (max-width: 1009px) {
+  .container-contact {
+    flex-wrap: wrap;
+  }
+}
