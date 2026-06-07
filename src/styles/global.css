@@ -9,6 +9,7 @@
 a {
   color: inherit;
   font-size: inherit;
+  font-family: inherit;
 }
 main {
   font-family: "DM Sans";
@@ -20,10 +21,12 @@ main {
 }
 :root {
   --color-orange: #f78520;
+  --color-yellow: #f8c200;
   --color-white: #fff;
   --color-grey: #5a5a5a;
   --color-pink: #81013a;
   --color-pink-2: #bf0259;
-  --color-pink-3: #bf0259;
+  --color-pink-3: rgb(201, 55, 159);
   --color-green: #9fd443;
+  --color-green-2: #06521c;
 }
