@@ -11,10 +11,6 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="/src/styles/collection.css">
   <link rel="stylesheet" href="/src/styles/popup.css">
-
-
-
-
   <title>Acervo</title>
 </head>
 
@@ -27,10 +23,10 @@
       </div>
       <nav class="navbar-menu">
         <ul class="navbar-list">
-          <li><a href="home.html">Início</a></li>
-          <li><a href="collection.html">Acervo</a></li>
-          <li>Sobre nós</li>
-          <li>Contato</li>
+          <li><a href="/pages/home.html">Início</a></li>
+          <li><a href="/pages/collection.html">Acervo</a></li>
+          <li><a href="/pages/about-us.html">Sobre nós</a></li>
+          <li><a href="/pages/contact.html">Contato</a></li>
         </ul>
       </nav>
       <img class="icon-user-menu" src="/src/images/SAIR.svg" alt="">
@@ -264,8 +260,8 @@
           <div class="subcontainer-form">
             <div class="column column-one">
               <div class="box-input">
-                <label for="tittle">Título do material:</label>
-                <input type="text" id="tittle" name="tittle" required placeholder="Inserir título do material">
+                <label for="title">Título do material:</label>
+                <input type="text" id="title" name="title" required placeholder="Inserir título do material">
               </div>
               <div class="box-support">
                 <div class="box-input">
@@ -273,8 +269,8 @@
                   <input type="number" id="number-pages" name="number-pages" required placeholder="ooo">
                 </div>
                 <div class="box-input">
-                  <label for="isbm">ISBM </label>
-                  <input type="number" id="isbm" name="isbm" required placeholder="ooo">
+                  <label for="isbn">ISBN </label>
+                  <input type="text" id="isbn" name="isbn" required placeholder="ooo">
                 </div>
               </div>
             </div>
@@ -389,8 +385,10 @@
       </small>
     </div>
   </footer>
-  <script src="/src/scripts/collection.js"></script>
-  <script src="/src/scripts/collectionBooks.js"></script>
+  <script src="/src/scripts/collectionAdd.js">
+  </script>
+  <script src="/src/scripts/collectionBooks.js">
+  </script>
 
 </body>
 
