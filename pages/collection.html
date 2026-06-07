@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <script src="https://kit.fontawesome.com/d4deb6b8e7.js" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="/src/styles/global.css">
   <link rel="stylesheet" href="/src/styles/header-footer.css">
   <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
@@ -29,7 +30,10 @@
           <li><a href="/pages/contact.html">Contato</a></li>
         </ul>
       </nav>
-      <img class="icon-user-menu" src="/src/images/SAIR.svg" alt="">
+      <button class="button-icon-user-logout">
+        <img class="icon-user" src="/src/images/icons/icon-user-grey.svg" tabindex="0" alt="Icon user">
+        <i class="icon-logout fa-solid fa-arrow-right-from-bracket"></i>
+      </button>
     </div>
   </header>
   <main class="main-collection">
@@ -389,7 +393,7 @@
   </script>
   <script src="/src/scripts/collectionBooks.js">
   </script>
-
+  <script src="/src/scripts/logout.js"></script>
 </body>
 
 </html>
