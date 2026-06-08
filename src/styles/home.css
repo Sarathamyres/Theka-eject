@@ -1,15 +1,15 @@
 .banner {
   height: 511px;
   display: flex;
+  background-color: var(--color-green);
+  border-radius: 20px;
 }
 .banner-home {
-  background-color: palegreen;
   height: 100%;
   width: 100%;
-  background-image: url("/src/images/banner-home.png");
+  background-image: url("/src/images/banners/image-banner-orange.png");
   background-repeat: repeat;
   background-size: cover;
-  border-radius: 0 20px 20px 0;
 }
 .banner .image-logo-banner {
   margin-bottom: 20px;
@@ -19,7 +19,6 @@
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  background-color: var(--color-green);
   padding: 20px;
   border-radius: 20px 0 0 20px;
 }
