@@ -36,10 +36,11 @@ form {
   display: flex;
   gap: 20px;
 }
-.box-image-book {
+.box-image-book img{
+  width: 237px;
+  height: 356px;
   display: flex;
-  align-items: start;
-  justify-content: center;
+ 
 }
 .column {
   display: flex;
