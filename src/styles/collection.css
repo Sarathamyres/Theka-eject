@@ -53,13 +53,19 @@
 }
 .collection-books .collection-books_list {
   display: grid;
-  grid-template-columns: repeat(5, 1fr);
+  grid-template-columns: repeat(4, 1fr);
   gap: 10px;
   place-items: center;
   align-items: center;
 }
 .collection-books .collection-books_list li {
   position: relative;
+}
+.collection-books figure {
+  background: rebeccapurple;
+  width: 250px;
+  height: 400px;
+  border-radius: 20px;
 }
 .collection-books figcaption {
   display: none;
