@@ -2,7 +2,7 @@ main {
   display: flex;
 }
 main .container-banner {
-  background-image: url("../images/image-banner.png");
+  background-image: url("../images/banners/image-banner.png");
   background-size: cover;
   background-position: center bottom;
   background-repeat: no-repeat;
