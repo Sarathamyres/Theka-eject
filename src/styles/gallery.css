@@ -82,6 +82,7 @@
 .gallery-carousel-container figure img {
   width: 300px;
   height: 450px;
+  border-radius: 20px;
 }
 .figure-1 {
   transform: rotate(5deg);
