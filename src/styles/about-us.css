@@ -66,6 +66,7 @@
 }
 .banner-main {
   display: flex;
+  justify-content: space-between;
   background-color: var(--color-green);
   border-radius: 20px;
   overflow: hidden;
@@ -81,6 +82,8 @@
 }
 .introduction p {
   font-size: 1.8rem;
+  max-width: 50ch;
+  text-align: justify;
 }
 .our-values {
   font-size: 6.4rem;
@@ -98,20 +101,43 @@
 }
 .our-values .boxes {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(300px, 387px));
   justify-content: center;
   gap: 20px;
   padding-bottom: 50px;
 }
 .our-values .box-values {
-  display: flex;
-  justify-content: space-between;
-  flex-direction: column;
   overflow: hidden;
   border-radius: 20px;
+  max-width: 387px;
+  height: 260px;
+  cursor: pointer;
 }
 .our-values .box-values img {
   height: 200px;
+}
+.boxes .box-values .front {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  display: flex;
+}
+.boxes .box-values:hover .front {
+  display: none;
+}
+.back {
+  display: none;
+  width: 100%;
+  height: 100%;
+  align-items: center;
+  font-size: 3rem;
+  padding: 0 10px;
+  color: var(--color-white);
+  font-family: Inter;
+}
+.boxes .box-values:hover .back {
+  display: flex;
 }
 .our-values .box-values:first-child {
   background-color: var(--color-yellow);
@@ -152,7 +178,7 @@
 .container-team .box-team:nth-child(4) {
   background-color: var(--color-green-2);
 }
-@media (max-width: 546px) {
+@media (max-width: 612px) {
   #about-us .navbar-menu {
     display: none;
   }
@@ -179,6 +205,11 @@
   .text-banner img {
     width: 450px;
   }
+}
+@media (max-width: 763px) {
+ #about-us .icon-user{
+  width: 30px;
+ }
 }
 @media (max-width: 500px) {
   .our-values .boxes {
