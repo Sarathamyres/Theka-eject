@@ -13,6 +13,7 @@
   <link rel="stylesheet" href="/src/styles/home.css">
   <link rel="stylesheet" href="/src/styles/gallery.css">
   <link rel="stylesheet" href="/src/styles/statistics.css">
+  <link rel="stylesheet" href="/src/styles/menu-mobile.css">
 
 
 
@@ -39,7 +40,24 @@
         <i class="icon-logout fa-solid fa-arrow-right-from-bracket"></i>
       </button>
     </div>
+    <div class="logo-mobile">
+      <img class="logo-little" src="/src/images/logos/LOGOTIPO.svg" alt="LOGOTIPO">
+      <div class="container-logo-theka">
+        <img class="logo-theka" src="/src/images/logos/LOGOTIPO-grey.svg" alt="">
+      </div>
+    </div>
   </header>
+  <section class="menu-mobile">
+    <div class="container">
+      <img class="logo-theka-menu-mobile" src="/src/images/logos/LOGOTIPO-grey.svg" alt="Logo Theka">
+      <ul class="list-menu-mobile">
+        <li><a href="/pages/home.html">Início</a></li>
+        <li><a href="/pages/collection.html">Acervo</a></li>
+        <li><a href="/pages/about-us.html">Sobre nós</a></li>
+        <li><a href="contact.html">Contato</a></li>
+      </ul>
+    </div>
+  </section>
   <main>
     <div class="container-global">
       <section class="banner">
@@ -48,7 +66,7 @@
             <img class="image-logo-banner" src="/src/images/logos/LOGOTIPO-black.png" alt="Logo Theka">
             <p>Desvende o mundo atráves dos livros.</p>
           </div>
-          <button>Acervo</button>
+          <button><a href="/pages/collection.html">Acervo</a></button>
         </div>
         <div class="banner-home"></div>
       </section>
@@ -77,31 +95,31 @@
         <div class="gallery-carousel">
           <div class="gallery-carousel-container">
             <figure class="figure-1">
-              <img src="/src/images/books/CAPA LIVRO (2).png" alt="">
+              <img src="" alt="">
               <figcaption class="arrow-button">
                 <i class="fa-solid fa-arrow-right-long"></i>
               </figcaption>
             </figure>
             <figure class="figure-2">
-              <img src="/src/images/books/CAPA LIVRO (1).png" alt="">
+              <img src="" alt="">
               <figcaption class="arrow-button">
                 <i class="fa-solid fa-arrow-right-long"></i>
               </figcaption>
             </figure>
             <figure class="figure-3">
-              <img src="/src/images/books/CAPA LIVRO (10).png" alt="">
+              <img src="" alt="">
               <figcaption class="arrow-button">
                 <i class="fa-solid fa-arrow-right-long"></i>
               </figcaption>
             </figure>
             <figure class="figure-4">
-              <img src="/src/images/books/CAPA LIVRO (11).png" alt="">
+              <img src="" alt="">
               <figcaption class="arrow-button">
                 <i class="fa-solid fa-arrow-right-long"></i>
               </figcaption>
             </figure>
             <figure class="figure-5">
-              <img src="/src/images/books/CAPA LIVRO (12).png" alt="">
+              <img src="" alt="">
               <figcaption class="arrow-button">
                 <i class="fa-solid fa-arrow-right-long"></i>
               </figcaption>
@@ -109,12 +127,12 @@
           </div>
         </div>
         <div class="box-links-section-gallery mobile">
-          <a href="">Veja os destaques da semana
+          <a href="/pages/collection.html">Veja os destaques da semana
             <div class="box-arrow-icon">
               <i class="arrow-icon fa-solid fa-arrow-right" style="color: rgb(129, 1, 58)"></i>
             </div>
           </a>
-          <a href="">Acesse nosso acervo completo
+          <a href="/pages/collection.html">Acesse nosso acervo completo
             <div class="box-arrow-icon">
               <i class="arrow-icon fa-solid fa-arrow-right" style="color: rgb(129, 1, 58)"></i>
             </div>
@@ -239,6 +257,8 @@
   <script src="/src/scripts/gallery.js"></script>
   <script src="/src/scripts/statistics.js"></script>
   <script src="/src/scripts/logout.js"></script>
+  <script src="/src/scripts/menu-mobile.js"></script>
+
 </body>
 
 </html>
