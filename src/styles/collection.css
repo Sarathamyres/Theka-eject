@@ -64,14 +64,21 @@
 }
 .collection-books figure {
   border-radius: 20px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 20px;
 }
 .collection-books figure img {
   width: 250px;
+  height: 400px;
   border-radius: 20px;
 }
 .collection-books figcaption {
   display: none;
   font-size: 3rem;
+  color: var(--color-white);
   background-color: rgba(52, 51, 51, 0.5);
   backdrop-filter: blur(10px); /* Aplica o efeito embaçado */
   -webkit-backdrop-filter: blur(10px); /* Compatibilidade Safari */

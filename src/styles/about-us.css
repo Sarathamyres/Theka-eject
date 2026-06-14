@@ -101,7 +101,7 @@
 }
 .our-values .boxes {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 387px));
+  grid-template-columns: repeat(auto-fit, minmax(300px, 370px));
   justify-content: center;
   gap: 20px;
   padding-bottom: 50px;
