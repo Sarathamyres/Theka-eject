@@ -12,15 +12,17 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="/src/styles/collection.css">
   <link rel="stylesheet" href="/src/styles/popup.css">
+  <link rel="stylesheet" href="/src/styles/menu-mobile.css">
+
   <title>Acervo</title>
 </head>
 
-<body>
+<body id="collection">
   <header>
     <div class="container-global">
       <div class="logo">
         <img class="logo-little" src="/src/images/logos/LOGOTIPO.svg" alt="LOGOTIPO">
-        <img class="logo-gray" src="/src/images/logos/LOGOTIPO-grey.svg" alt="LOGOTIPO">
+        <img id="logo-Theka-Collection" class="logo-theka-header-mobile" src="/src/images/logos/LOGOTIPO-grey.svg" alt="LOGOTIPO">
       </div>
       <nav class="navbar-menu">
         <ul class="navbar-list">
@@ -36,6 +38,17 @@
       </button>
     </div>
   </header>
+  <section class="menu-mobile">
+    <div class="container">
+      <img class="logo-theka-menu-mobile" src="/src/images/logos/LOGOTIPO-grey.svg" alt="Logo Theka">
+      <ul class="list-menu-mobile">
+        <li><a href="/pages/home.html">Início</a></li>
+        <li><a href="/pages/collection.html">Acervo</a></li>
+        <li><a href="/pages/about-us.html">Sobre nós</a></li>
+        <li><a href="contact.html">Contato</a></li>
+      </ul>
+    </div>
+  </section>
   <main class="main-collection">
     <div class="container-global">
       <section class="filter">
@@ -69,7 +82,7 @@
         <ul class="collection-books_list">
           <li>
             <figure>
-              <img src="">
+              <img class="image-book" src="">
               <figcaption>
                 <strong>Título do Livro</strong>
                 <p>Autor do Livro, 200</p>
@@ -81,7 +94,7 @@
           </li>
           <li>
             <figure>
-              <img src="">
+              <img xlass="image-book" src="">
               <figcaption>
                 <strong>Título do Livro</strong>
                 <p>Autor do Livro, 200</p>
@@ -93,7 +106,7 @@
           </li>
           <li>
             <figure>
-              <img src="">
+              <img class="image-book" src="">
               <figcaption>
                 <strong>Título do Livro</strong>
                 <p>Autor do Livro, 200</p>
@@ -105,7 +118,7 @@
           </li>
           <li>
             <figure>
-              <img src="">
+              <img class="image-book" src="">
               <figcaption>
                 <strong>Título do Livro</strong>
                 <p>Autor do Livro, 200</p>
@@ -117,7 +130,7 @@
           </li>
           <li>
             <figure>
-              <img src="">
+              <img class="image-book" src="">
               <figcaption>
                 <strong>Título do Livro</strong>
                 <p>Autor do Livro, 200</p>
@@ -129,7 +142,7 @@
           </li>
           <li>
             <figure>
-              <img src="">
+              <img class="image-book" src="">
               <figcaption>
                 <strong>Título do Livro</strong>
                 <p>Autor do Livro, 200</p>
@@ -141,7 +154,7 @@
           </li>
           <li>
             <figure>
-              <img src="">
+              <img class="image-book" src="">
               <figcaption>
                 <strong>Título do Livro</strong>
                 <p>Autor do Livro, 200</p>
@@ -153,7 +166,7 @@
           </li>
           <li>
             <figure>
-              <img src="">
+              <img class="image-book" src="">
               <figcaption>
                 <strong>Título do Livro</strong>
                 <p>Autor do Livro, 200</p>
@@ -165,7 +178,7 @@
           </li>
           <li>
             <figure>
-              <img src="">
+              <img class="image-book" src="">
               <figcaption>
                 <strong>Título do Livro</strong>
                 <p>Autor do Livro, 200</p>
@@ -177,7 +190,7 @@
           </li>
           <li>
             <figure>
-              <img src="">
+              <img class="image-book" src="">
               <figcaption>
                 <strong>Título do Livro</strong>
                 <p>Autor do Livro, 200</p>
@@ -189,7 +202,7 @@
           </li>
           <li>
             <figure>
-              <img src="">
+              <img class="image-book" src="">
               <figcaption>
                 <strong>Título do Livro</strong>
                 <p>Autor do Livro, 200</p>
@@ -201,7 +214,7 @@
           </li>
           <li>
             <figure>
-              <img src="">
+              <img class="image-book" src="">
               <figcaption>
                 <strong>Título do Livro</strong>
                 <p>Autor do Livro, 200</p>
@@ -213,7 +226,7 @@
           </li>
           <li>
             <figure>
-              <img src="">
+              <img class="image-book" src="">
               <figcaption>
                 <strong>Título do Livro</strong>
                 <p>Autor do Livro, 200</p>
@@ -225,7 +238,7 @@
           </li>
           <li>
             <figure>
-              <img src="">
+              <img class="image-book" src="">
               <figcaption>
                 <strong>Título do Livro</strong>
                 <p>Autor do Livro, 200</p>
@@ -237,7 +250,7 @@
           </li>
           <li>
             <figure>
-              <img src="">
+              <img class="image-book" src="">
               <figcaption>
                 <strong>Título do Livro</strong>
                 <p>Autor do Livro, 200</p>
@@ -398,6 +411,8 @@
   </script>
   <script src="/src/scripts/logout.js"></script>
   <script src="/src/scripts/popup.js"></script>
+  <script src="/src/scripts/menu-mobile.js"></script>
+
 </body>
 
 </html>
