@@ -1,3 +1,6 @@
+.logo-mobile{
+  display: none;
+}
 .icon-logout {
   display: none;
   font-size: 2.5rem;
@@ -74,6 +77,9 @@ header .navbar-list {
 }
 /* === Fim do header da página sobre nós === */
 
+header .logo-mobile .logo-theka-header-mobile {
+  width: 145px;
+}
 footer {
   background-color: var(--color-pink);
   color: var(--color-white);
@@ -198,15 +204,5 @@ footer .baseboard {
   }
   footer .nav-box:last-child p {
     display: none;
-  }
-}
-@media (max-width: 500px) {
-  header .navbar-menu,
-  header .button-icon-user-logout {
-    display: none;
-  }
-  footer nav {
-    flex-direction: column;
-    align-items: center;
   }
 }
