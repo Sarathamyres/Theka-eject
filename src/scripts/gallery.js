@@ -3,6 +3,25 @@ const gallery = document.querySelector(".gallery-carousel-container");
 const galleryItem = document.querySelectorAll(
   ".gallery-carousel-container figure",
 );
+
+const images = document.querySelectorAll(
+  ".gallery-carousel-container figure img",
+);
+
+fetch("https://thekaapi3.pythonanywhere.com/livros/")
+  .then((res) => {
+    return res.json();
+  })
+  .then((data) => {
+    const booksList = data.results;
+    booksList.forEach((book, indice) => {
+      const tagImgHtml = images[indice];
+      if (tagImgHtml) {
+        tagImgHtml.src = book.capa;
+      }
+    });
+  });
+
 let index = 0;
 buttonsArrow.forEach((arrow) => {
   arrow.addEventListener("click", () => {
