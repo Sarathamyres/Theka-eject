@@ -14,7 +14,7 @@ a {
 main {
   font-family: "DM Sans";
 }
-.logo-mobile {
+.logo-header-mobile {
   display: none;
 }
 .container-global {
@@ -32,18 +32,4 @@ main {
   --color-pink-3: rgb(201, 55, 159);
   --color-green: #9fd443;
   --color-green-2: #06521c;
-}
-.logo {
-  display: flex;
-  text-align: start;
-  gap: 50px;
-  border-radius: 0;
-  width: 100%;
-  margin-top: 20px;
-}
-.container-global .logo .logo-little {
-  width: 60px;
-}
-.container-global .logo .logo-theka-header-mobile {
-  width: 145px;
 }
