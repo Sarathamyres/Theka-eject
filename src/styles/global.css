@@ -14,6 +14,9 @@ a {
 main {
   font-family: "DM Sans";
 }
+.logo-mobile {
+  display: none;
+}
 .container-global {
   max-width: 1250px;
   padding: 20px 41px;
