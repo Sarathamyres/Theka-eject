@@ -24,8 +24,10 @@ header .container-global {
   margin: 0 auto;
 }
 header .navbar-menu {
-  width: 50%;
+  display: flex;
+  gap: 20px;
   color: var(--color-grey);
+  width: 50%;
 }
 header .navbar-list {
   display: flex;
@@ -163,6 +165,14 @@ footer .baseboard {
     width: 100%;
   }
 }
+@media (max-width: 884px) {
+  header .navbar-menu {
+    width: 70%;
+  }
+  header .button-icon-user-logout .icon-user {
+    width: 30px;
+  }
+}
 @media (max-width: 766px) {
   header .navbar-list {
     font-size: 3.5rem;
@@ -192,7 +202,7 @@ footer .baseboard {
 }
 @media (max-width: 500px) {
   header .navbar-menu,
-  header .icon-user-menu {
+  header .button-icon-user-logout {
     display: none;
   }
   footer nav {
