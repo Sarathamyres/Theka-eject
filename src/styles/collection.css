@@ -1,6 +1,7 @@
 .filter {
   margin: 100px 0;
   margin: 0 auto;
+  padding: 0 10px;
 }
 .filter h3 {
   font-size: 6.4rem;
@@ -132,22 +133,43 @@
 @media (max-width: 880px) {
   .collection-books .collection-books_list {
     grid-template-columns: repeat(2, 1fr);
+    padding: 20px 0;
   }
-  .collection-books {
-    padding: 0;
+  .collection-books figure {
+    width: 200px;
+    height: 300px;
+    border-radius: 20px;
   }
 }
-@media (max-width: 500px) {
-  .main-collection .container-global {
-    padding: 20px;
+@media (max-width: 551px) {
+  header .logo-header-mobile {
+    display: flex;
+    gap: 50px;
+    width: 100%;
   }
-  .filter h3 {
-    font-size: 4rem;
+  header #logo-mobile {
+    width: 145px;
   }
-  .filter button.search {
-    padding: 10px;
+  header img.logo-drop {
+    width: 70px;
   }
-  .filter button.search span {
+  header .logo-little,
+  header .navbar-menu,
+  header .button-icon-user-logout {
     display: none;
+  }
+  @media (max-width: 500px) {
+    .main-collection .container-global {
+      padding: 0;
+    }
+    .filter h3 {
+      font-size: 4rem;
+    }
+    .filter button.search {
+      padding: 10px;
+    }
+    .filter button.search span {
+      display: none;
+    }
   }
 }

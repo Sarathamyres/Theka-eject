@@ -103,3 +103,17 @@ form {
     flex-wrap: wrap;
   }
 }
+@media (max-width: 690px) {
+  .logo-mobile {
+    display: flex;
+  }
+  header .navbar-menu,
+  header .button-icon-user-logout,
+  header .logo-little {
+    display: none;
+  }
+  footer nav {
+    flex-direction: column;
+    align-items: center;
+  }
+}
