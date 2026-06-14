@@ -48,9 +48,6 @@
   color: var(--color-orange);
   font-weight: 700;
 }
-.logo-mobile {
-  display: none;
-}
   @media (max-width: 530px) {
     header .container-global {
       display: none;
