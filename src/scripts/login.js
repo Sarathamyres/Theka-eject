@@ -13,54 +13,34 @@ function inputEmpty(input) {
 }
 
 userFormLogin.addEventListener("submit", (event) => {
-  event.preventDefault();
+  event.preventDefault(); 
+
+  let formValido = true;
   const inputsLogin = userFormLogin.querySelectorAll("input");
+
   inputsLogin.forEach((inputLogin) => {
-    if (inputLogin.value == "") {
+    if (inputLogin.value.trim() === "") {
       inputEmpty(inputLogin);
+      formValido = false;
     } else {
       inputLogin.style.border = "2px solid #f78520";
     }
   });
-});
-linkForgotPassword.addEventListener("click", () => {
-  userFormLogin.classList.remove("active");
-  emailForRecoverPassword.classList.add("active");
-});
-linksCreateAccount.forEach((linkCreateAccount) => {
-  linkCreateAccount.addEventListener("click", () => {
-    userFormLogin.classList.remove("active");
-    userFormRegister.classList.add("active");
-  });
-});
-if (backForLogin) {
-  backForLogin.forEach((back) => {
-    back.addEventListener("click", () => {
-      if (emailForRecoverPassword) {
-        emailForRecoverPassword.classList.remove("active");
-      }
-      if (formCreateAccount) {
-        formCreateAccount.classList.remove("active");
-      }
-      if (emailForRecoverPassword) {
-        emailForRecoverPassword.classList.remove("active");
-      }
-      userFormLogin.classList.add("active");
-    });
-  });
-}
-userFormLogin.addEventListener("submit", (event) => {
-  event.preventDefault();
-  //const formLogin = new FormData(userFormLogin);
+
+  if (!formValido) return;
+
   const userEmail = document.getElementById("user-email");
   const userPassword = document.getElementById("password");
-  if (!userEmail && !userPassword) {
+
+  if (!userEmail || !userPassword) {
     return;
   }
+
   const dataFormLogin = {
     email: userEmail.value,
     password: userPassword.value,
   };
+
   fetch("https://thekaapi3.pythonanywhere.com/auth/token/", {
     method: "POST",
     headers: {
@@ -80,9 +60,10 @@ userFormLogin.addEventListener("submit", (event) => {
       const tokenRefresh = data.refresh;
       localStorage.setItem("refresh", tokenRefresh);
 
-      console.log(data);
+      console.log("Login efetuado com sucesso:", data);
       alert("Login realizado com sucesso!");
-      window.location.href = "./pages/home.html";
+
+      window.location.href = "./home.html";
     })
     .catch((error) => {
       console.error(error);
