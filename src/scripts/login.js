@@ -13,7 +13,7 @@ function inputEmpty(input) {
 }
 
 userFormLogin.addEventListener("submit", (event) => {
-  event.preventDefault(); 
+  event.preventDefault();
 
   let formValido = true;
   const inputsLogin = userFormLogin.querySelectorAll("input");
@@ -42,7 +42,7 @@ userFormLogin.addEventListener("submit", (event) => {
   };
 
   fetch("https://thekaapi3.pythonanywhere.com/auth/token/", {
-    method: "POST",
+    method: "GET",
     headers: {
       "Content-Type": "application/json",
     },
