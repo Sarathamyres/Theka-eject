@@ -1,5 +1,5 @@
 fetch(
-  "https://thekaapideploy3.pythonanywhere.com/institucional/estatisticas-biblioteca/",
+  "https://thekaapi3.pythonanywhere.com/institucional/estatisticas-biblioteca/",
 )
   .then((resposta) => resposta.json())
   .then((json) => {
