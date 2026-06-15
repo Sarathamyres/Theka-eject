@@ -1,4 +1,4 @@
-const closeDialog = document.querySelector(".close-dialog");
+const closeDialog = document.getElementById("cancel");
 const addMaterial = document.getElementById("add-material");
 const addition = document.querySelector(".addition");
 
