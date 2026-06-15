@@ -42,7 +42,7 @@ userFormLogin.addEventListener("submit", (event) => {
   };
 
   fetch("https://thekaapi3.pythonanywhere.com/auth/token/", {
-    method: "GET",
+    method: "POST",
     headers: {
       "Content-Type": "application/json",
     },
@@ -63,7 +63,7 @@ userFormLogin.addEventListener("submit", (event) => {
       console.log("Login efetuado com sucesso:", data);
       alert("Login realizado com sucesso!");
 
-      window.location.href = "./home.html";
+      window.location.href = "/pages/home.html";
     })
     .catch((error) => {
       console.error(error);
