@@ -1,4 +1,5 @@
 const userFormLogin = document.getElementById("user-form-login");
+const userFormRegister = document.getElementById("user-form-register");
 const formCreateAccount = document.getElementById("user-form-register");
 const emailForRecoverPassword = document.getElementById(
   "user-form-email-new-password",
@@ -60,7 +61,7 @@ userFormLogin.addEventListener("submit", (event) => {
     email: userEmail.value,
     password: userPassword.value,
   };
-  fetch("https://thekaapideploy2.pythonanywhere.com/auth/token/", {
+  fetch("https://thekaapi3.pythonanywhere.com/auth/token/", {
     method: "POST",
     headers: {
       "Content-Type": "application/json",
