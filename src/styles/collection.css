@@ -51,6 +51,7 @@
 }
 .collection-books {
   position: relative;
+  margin: 50px 0 50px 0;
 }
 .collection-books .collection-books_list {
   display: grid;
