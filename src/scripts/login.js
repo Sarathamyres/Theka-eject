@@ -82,7 +82,7 @@ userFormLogin.addEventListener("submit", (event) => {
 
       console.log(data);
       alert("Login realizado com sucesso!");
-      window.location.href = "/pages/home.html";
+      window.location.href = "./pages/home.html";
     })
     .catch((error) => {
       console.error(error);
