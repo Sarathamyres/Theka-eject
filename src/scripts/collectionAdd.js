@@ -34,7 +34,7 @@ formAddMaterial.addEventListener("submit", (event) => {
   };
   const accessToken = localStorage.getItem("token");
 
-  fetch("https://thekaapideploy3.pythonanywhere.com/livros/", {
+  fetch("https://thekaapi3.pythonanywhere.com/livros/", {
     method: "POST",
     headers: {
       "Content-Type": "application/json",
