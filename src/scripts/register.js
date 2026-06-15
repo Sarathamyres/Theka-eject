@@ -1,4 +1,3 @@
-const urlBase = "https://thekaapideploy2.pythonanywhere.com";
 formCreateAccount.addEventListener("submit", (event) => {
   let formok = true;
   event.preventDefault();
@@ -21,7 +20,7 @@ formCreateAccount.addEventListener("submit", (event) => {
     const formRegister = new FormData(formCreateAccount);
     const dataFormRegister = Object.fromEntries(formRegister.entries());
     console.log(formRegister);
-    fetch(`${urlBase}/users/`, {
+    fetch("https://thekaapi3.pythonanywhere.com/users/", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify(dataFormRegister),

@@ -12,7 +12,7 @@ emailForRecoverPassword.addEventListener("submit", (event) => {
   if (formOk) {
     const email = new FormData(emailForRecoverPassword);
     const dataEmail = Object.fromEntries(email.entries());
-    fetch("https://thekaapideploy2.pythonanywhere.com/auth/password/reset/", {
+    fetch("https://thekaapideploy3.pythonanywhere.com/auth/password/reset/", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify(dataEmail),

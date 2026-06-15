@@ -30,11 +30,11 @@ formAddMaterial.addEventListener("submit", (event) => {
     ano_publicacao: Number(publicationDate.value),
     editora: 0,
     resumo: text.value,
-    genero: "indefinido"
+    genero: "indefinido",
   };
   const accessToken = localStorage.getItem("token");
 
-  fetch("https://thekaapideploy2.pythonanywhere.com/livros/", {
+  fetch("https://thekaapideploy3.pythonanywhere.com/livros/", {
     method: "POST",
     headers: {
       "Content-Type": "application/json",
