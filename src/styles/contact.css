@@ -72,6 +72,7 @@ form {
   padding: 10px;
   border-radius: 20px;
   border-color: var(--color-pink);
+  font-size: 1.8rem;
 }
 .container-contact .box-input input::placeholder {
   font-size: 10px;
