@@ -8,6 +8,26 @@ const backForLogin = document.querySelectorAll(".back");
 const linkForgotPassword = document.getElementById("forgot-password");
 const linksCreateAccount = document.querySelectorAll(".create-account");
 
+linkForgotPassword.addEventListener("click", () => {
+  userFormLogin.classList.remove("active");
+  emailForRecoverPassword.classList.add("active");
+});
+
+backForLogin.forEach((back) => {
+  back.addEventListener("click", () => {
+    formCreateAccount.classList.remove("active");
+    emailForRecoverPassword.classList.remove("active");
+    userFormLogin.classList.add("active");
+  });
+});
+linksCreateAccount.forEach((createAccount) => {
+  createAccount.addEventListener("click", () => {
+    userFormLogin.classList.remove("active");
+    emailForRecoverPassword.classList.remove("active");
+    formCreateAccount.classList.add("active");
+  });
+});
+
 function inputEmpty(input) {
   input.style.border = "3px solid red";
 }
@@ -63,7 +83,7 @@ userFormLogin.addEventListener("submit", (event) => {
       console.log("Login efetuado com sucesso:", data);
       alert("Login realizado com sucesso!");
 
-      window.location.href = "/pages/home.html";
+      window.location.href = "home.html";
     })
     .catch((error) => {
       console.error(error);
